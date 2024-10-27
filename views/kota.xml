@@ -1,0 +1,10 @@
+<record id="view_kota_graph" model="ir.ui.view">
+    <field name="name">alamat.graph</field>
+    <field name="model">siswa_property</field>
+    <field name="arch" type="xml">
+        <graph string="Jumlah Siswa berdasarkan Alamat" type="bar">
+            <field name="alamat" type="char" />  
+            <field name="id" name="count" type="count"/>
+        </graph>
+    </field>
+</record>
